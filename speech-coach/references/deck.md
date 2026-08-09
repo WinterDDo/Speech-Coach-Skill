@@ -1,12 +1,24 @@
-# Slides and the storyboard
+# Slides and the slide brief
 
 Read this at Stage 6.
 
-The output of this stage is a **storyboard** — a specification of what is said against what
-is shown, slide by slide. It is not a deck file. Hand the storyboard to the `pptx` skill, a
-designer, or the user's own hands. Keeping narrative separate from file production is
-deliberate: the logic should survive a change of tool, a change of template, and a change
-of mind about the software.
+The output of this stage is a **slide brief** — a per-slide specification of the *one point
+that slide has to land*, what has to be visible, and what the speaker says over it. It is
+not a deck file, and it is deliberately not a design document.
+
+**The division of labour matters.** This skill decides *what each page must communicate*,
+because that follows from the talk's structure and nobody downstream can reconstruct it.
+Whoever builds the deck decides *how it looks* — layout, type, palette, imagery, motion —
+because that's their craft and they're better at it. The brief in `assets/ppt-brief.md`
+carries its own instructions to the builder, so it can be handed over whole and unedited to
+the `pptx` skill, `ppt-master`, a designer, or the user.
+
+Keeping narrative separate from production is deliberate: the logic should survive a change
+of tool, a change of template, and a change of mind about the software.
+
+Everything below is about **content** decisions — what goes on a page and why. Where it
+touches visual matters (size, contrast), treat it as a constraint the design must satisfy,
+not as design direction.
 
 ---
 
@@ -24,7 +36,7 @@ an image, the shape of data, a live demo, a person's face, a physical comparison
 
 **The B key.** In most presentation software, pressing `B` blanks the screen to black. It
 is the most underused control in the room. When you want every eye on you — the confession,
-the ask, the close — blank it. Put `[BLANK — press B]` in the storyboard as a deliberate
+the ask, the close — blank it. Put `[BLANK — press B]` in the slide brief as a deliberate
 instruction, not an accident.
 
 ---
@@ -139,21 +151,24 @@ the notes view. That's the closest legitimate compromise.
 
 ---
 
-## The storyboard format
+## The brief format
 
-Use `assets/storyboard.md`. One row per slide:
+Use `assets/ppt-brief.md`. One row per slide:
 
-| # | Beat | Time | What you SAY | What's ON SCREEN | Why this slide exists | Note |
+| # | Beat | Hold | The point | Must be visible | Evidence / source | Speaker says |
 |---|---|---|---|---|---|---|
 
-- **What you SAY** — one line, the gist, not the script. The full words live in the script.
-- **What's ON SCREEN** — described precisely enough to build without asking: *"Full-bleed
-  photo of the actual 14-page form, shot on a desk"* not *"image of paperwork."*
-- **Why this slide exists** — if you can't fill this column, delete the row. This column is
-  the whole point of the format; it is where redundant slides die.
-- **Note** — build steps, `[BLANK]`, demo cues, "hold this slide for 90 seconds."
+- **The point** — this slide's entire job, as one assertion. **If you can't fill this cell,
+  delete the row.** This column is where redundant slides die, and it is the reason the
+  brief works as a handoff: it tells the builder what success looks like per page.
+- **Must be visible** — described precisely enough to build without asking: *"the actual
+  14-page form, photographed flat on a desk"* not *"image of paperwork."* Name the type:
+  photo / chart / one number / quote / demo / diagram / blank.
+- **Speaker says** — the gist, so the builder understands the moment. **Never slide copy** —
+  putting the narration on screen is the redundancy effect, and it subtracts.
+- **Hold** — how long the slide stays up. Anything under ~20 seconds should probably merge.
 
-**Sanity checks on a finished storyboard:**
+**Sanity checks on a finished brief:**
 
 - Any slide whose "why" is "so there's something on screen" → cut it.
 - Any slide where SAY and ON SCREEN are the same words → the redundancy effect; fix one.
@@ -166,13 +181,13 @@ Use `assets/storyboard.md`. One row per slide:
 
 ## Handoff
 
-The storyboard is designed to be executed by something else:
+The brief is designed to be executed by something else:
 
-- **`pptx` skill** — give it the storyboard plus any template, and ask for the file.
+- **`pptx` skill** — hand it the brief whole, plus any brand template, and ask for the file.
 - **`ppt-master` / deck tools** — same input, different renderer.
 - **A designer** — the "why this slide exists" column is exactly what they need and almost
   never get.
-- **The user, by hand** — the storyboard is already the plan; they just build it.
+- **The user, by hand** — the brief is already the plan; they just build it.
 
 Do not build the file from inside this skill. Narrative and production are different jobs,
 and welding them together makes both harder to revise.

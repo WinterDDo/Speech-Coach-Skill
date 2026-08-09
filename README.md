@@ -1,8 +1,8 @@
 # Speech Coach
 
 An agent skill that takes a rough idea and walks a person to a delivery-ready piece of
-public speaking: a **framework**, a **script written for the ear**, and a **slide-by-slide
-storyboard**.
+public speaking: a **framework**, a **script written for the ear**, and a **slide brief** that
+hands straight to a deck-building tool.
 
 A speech is not a document read aloud, and not a deck with a person standing next to it.
 It's a sequence of moments in time that changes what an audience believes, feels, or does.
@@ -16,11 +16,11 @@ best practitioners independently converged on.
 | Stage | Deliverable |
 |---|---|
 | 1. Brief | A one-page brief: throughline, the audience delta, the room, the constraints |
-| 2. Material | An inventory of the speaker's real stories, numbers, people, and scars |
+| 2. Material & voice | An inventory of the speaker's real stories, numbers and scars — plus a profile of how they actually talk |
 | 3. Architecture | A beat sheet with time budgets and a visible tension curve |
 | 4. Draft | A script written for the ear, with pause marks and pre-planned cuts |
-| 5. Sharpen | A mechanical check plus the read-aloud passes only a human can do |
-| 6. Storyboard | What is *said* against what is *shown*, slide by slide — or a recommendation to use no slides |
+| 5. Iterate | A revision loop that diagnoses before it edits, and keeps versions |
+| 6. Slide brief | Per slide: the one point it must land — handed straight to a deck-building skill |
 | 7. Rehearsal | Pause map, timing checkpoints, the five hardest questions, contingencies |
 
 ---
@@ -50,7 +50,7 @@ toasts, eulogies, panels, and on "help me with my slides."
 
 ## The method
 
-Seven stages, but three ideas do most of the work.
+Seven stages, but five ideas do most of the work.
 
 **Structure is decided before prose.** Stages 1–3 are where quality is determined. The
 skill will not write sentences until you've approved a throughline and a skeleton, because
@@ -68,6 +68,16 @@ discovers on stage that their own anecdote isn't true has been harmed, not helpe
 audience actually has to *do* in the room. Using a TED shape for a board update is a common
 and expensive mistake.
 
+**It writes in your voice, not a good one.** The clearest tell of machine-written speech is
+that it doesn't sound like the person saying it, and audiences read that as insincerity. The
+skill builds a voice profile before drafting and checks the draft back against it — a plain
+sentence you own beats an elegant one you're visibly wearing.
+
+**Revision is the job.** Stage 5 is a loop. Most complaints about a speech ("it's boring,"
+"it feels generic") are surface reports of a structural fault, so the skill diagnoses which
+layer is actually broken before touching a sentence — and keeps versions, because polish
+drift is real and the best line is often the one sanded off in round three.
+
 ---
 
 ## What's inside
@@ -79,12 +89,13 @@ speech-coach/
 │   ├── principles.md             what the masters share — and where they disagree
 │   ├── archetypes.md             10 occasion-specific skeletons with beat sheets
 │   ├── material-mining.md        extracting the speaker's real material
+│   ├── voice.md                  making it sound like the speaker, not like a speech
 │   ├── language.md               writing for the ear: rhythm, diction, devices, ban list
 │   ├── openings-closings.md      7 openings and 6 closings that work, and what never does
-│   ├── deck.md                   slides, data, and the storyboard spec
+│   ├── deck.md                   slides, data, and the slide-brief spec
 │   ├── delivery.md               rehearsal, nerves, Q&A, virtual, recovery
 │   └── teardowns.md              5 canonical speeches, structurally dismantled
-├── assets/                       fill-in templates for each deliverable
+├── assets/                       fill-in templates, including the slide brief
 └── scripts/
     └── speech_check.py           runtime, pacing, sentence length, cliché detection
 ```
@@ -98,6 +109,14 @@ python3 speech_check.py draft.md --wpm 140 --target-minutes 10
 It measures runtime against budget, per-section pacing, sentences too long for one breath
 (in *seconds*, so it works across languages), cliché and filler density, passive voice, and
 number density. It's a smoke detector, not a judge.
+
+### The slide brief
+
+The deck deliverable is a **handoff document**, not a design. It specifies, per page, the
+one point that page has to land, what must be visible, and what the speaker says over it —
+and says nothing about palette, typography, or layout. Those belong to whoever builds the
+deck. Hand `ppt-brief.md` whole to the `pptx` skill, `ppt-master`, or a designer; it carries
+its own instructions to the builder, including what it deliberately leaves them to decide.
 
 ---
 

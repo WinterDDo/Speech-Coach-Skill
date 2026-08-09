@@ -105,6 +105,34 @@ stop selling to enterprise.")*
 
 ---
 
+## Voice profile
+
+*From Stage 2. See `references/voice.md`. The draft is written at this register — never above it.*
+
+| Dimension | This speaker |
+|---|---|
+| **Sample used** | *(transcript / informal writing / their Stage 1 answers)* |
+| **Sentence length** | clipped / medium / long and rolling |
+| **Register** | boardroom formal / professional plain / casual / blunt |
+| **Pronoun** | "I" / "we" |
+| **Humor** | none / dry / self-deprecating / warm / sharp |
+| **Figurative language** | literal / reaches for metaphor |
+| **Technical density** | |
+| **Directness** | states the ask / circles it |
+| **Emotional range** | understated / expressive |
+| **Signature phrases to keep** | |
+| **Out of bounds** | *(profanity, slang, anything they'd never say)* |
+
+**The lunch-test line** — something they said naturally when asked to explain it as if to a
+colleague, captured close to verbatim:
+
+>
+
+**Read-back check:** did they confirm they'd actually say the opening and closing out loud?
+- [ ] Opening ☐  Closing ☐
+
+---
+
 ## Open questions
 
 - [ ]
