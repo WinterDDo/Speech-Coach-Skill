@@ -18,6 +18,7 @@ and most expensive structural mistake in this whole discipline.
 | Be moved to sustained effort | **Rally** | 8 |
 | Acquire a skill or model they can use | **Teaching** | 9 |
 | React well without preparation | **Impromptu** | 10 |
+| *(any of the above, but delivered by two or more people)* | **Multi-speaker** — a constraint layered on top | 11 |
 
 When two fit, pick by what the audience must *do next*, not by what the content is about.
 A product launch to a board is an Executive Update wearing launch clothes.
@@ -255,6 +256,42 @@ spend ninety seconds on the ask and five on the story.
 
 **Universal impromptu opener** when you need three seconds to think: repeat or reframe the
 question out loud. It buys time, confirms you understood, and sounds deliberate.
+
+---
+
+## 11. Multi-speaker
+
+*Not an archetype so much as a constraint that breaks the others. Applies to co-presented
+decks, exec tag-teams, joint pitches, and panels.*
+
+**The failure mode.** Each speaker prepares their own section, and the audience receives
+three throughlines — which is the same as receiving none. Nobody in the room can say what
+the meeting was about afterwards, and each presenter privately thinks their own part went
+fine.
+
+**The fixes, in order of importance:**
+
+1. **One throughline for the whole session, owned by one named person.** Not one per
+   speaker. Everyone can recite it before anyone writes a word.
+2. **Assign beats, not topics.** "Sarah owns marketing" produces a mini-talk. "Sarah owns
+   the Need beat and the objection about channel cost" produces a part of an argument. Build
+   one beat sheet, then put initials next to beats.
+3. **Handoffs are content, not logistics.** "And now I'll pass to Marcus, who'll talk about
+   engineering" wastes the seam. The handoff sentence should carry the argument forward:
+   *"So the demand is real. What I couldn't tell you is whether we can build it — Marcus
+   can."* Write the handoff lines into both scripts, verbatim, on both sides.
+4. **Choose the edges deliberately.** Whoever has the most standing on the *problem* opens.
+   Whoever owns the *ask* closes. Seniority is not the criterion, and defaulting to it is
+   how the most senior person ends up delivering the least memorable part.
+5. **Rehearse the seams specifically.** Everyone rehearses their own section alone and
+   nobody rehearses the joins, which is exactly where a multi-speaker session dies. Run the
+   handoffs three times before you run anything else.
+6. **Budget to 80%, not 85%.** Every speaker runs over, and the overruns compound onto
+   whoever goes last — usually the person with the ask.
+
+**Panels** are a different animal: the moderator owns the throughline, and each panelist is
+running the Impromptu archetype (§10). Prepare three points you intend to make regardless of
+the questions, each with one concrete instance, and bridge to them.
 
 ---
 

@@ -13,7 +13,8 @@ The method is synthesized from where the great practitioners independently conve
 Aristotle and Cicero, Dale Carnegie, Monroe's Motivated Sequence, Barbara Minto, Nancy
 Duarte, Chris Anderson's TED framework, and the working habits of Lincoln, Churchill,
 King, Jobs, and Obama. `references/principles.md` holds that synthesis, including the
-places where they genuinely disagree.
+places where they genuinely disagree. `references/worked-example.md` runs the whole
+workflow once, end to end, if you want to see the shape before starting.
 
 ## Operating rules
 
@@ -49,19 +50,30 @@ prose. Gates marked **[GATE]** require the user to confirm before continuing.
 
 ### Stage 1 — Brief
 
-Ask these six questions in a single batch. Tell the user that "I don't know" is a valid
-answer to any of them and you'll help work it out.
+**Ask two questions, then guess the rest.** Someone who has just typed "I have to speak at
+my sister's wedding in three weeks" is nervous, and answering a six-part questionnaire is
+work they came here to avoid. Correcting your guesses is much cheaper than filling in a
+form, and it gets you better answers besides — people are more precise when disagreeing
+than when composing.
 
-1. **The room.** Who's in the audience, how many, and what's their relationship to you?
-2. **The container.** How long, what format (stage / boardroom / video call / no slides
-   allowed), and where in the agenda?
-3. **The delta.** What must be different when you sit down — what do they think, feel, or
-   do that they didn't before?
-4. **The resistance.** What do they currently believe or feel about this? What's the
-   objection you're most afraid of?
-5. **Your standing.** Why you and not someone else? (Lived it / studied it / accountable
-   for it.)
-6. **The rails.** Anything you must include, must not say, or must be careful about?
+Ask only the two things you cannot infer:
+
+1. **Who's in the room, and what needs to be different when you sit down?**
+2. **How long do you have, and what's the setting?**
+
+Then infer everything else from their answer and the occasion, and present a **filled-in
+draft brief** with every inference marked `[assumed]`, ending with: *"Correct anything
+I've got wrong."* Infer at minimum:
+
+- the occasion type and the likely archetype
+- what the audience currently believes, and the objection they'll raise
+- the speaker's likely source of standing
+- format constraints — slides, Q&A, whether it will be **interpreted** (this changes
+  everything downstream; see `references/language.md`)
+
+Guess concretely and be wrong in specific ways. "[assumed] Your CFO will ask why this can't
+wait a quarter" gets corrected into real information. "[assumed] there may be some
+resistance" gets nothing, because there is nothing to push against.
 
 Then write the throughline and test it:
 
@@ -107,6 +119,12 @@ Pacing (rule of thumb — have the user calibrate by reading 200 words aloud and
 | Formal / ceremonial / emotional | 110–130 | ~600 | ~1,200 | ~2,100 |
 
 Budget to **85% of the time limit**. Every speech runs long live.
+
+**Decide what you are deliberately not saying, and plan Q&A now — not at rehearsal.** In
+most business settings Q&A is half the event and the decision is made there, not during the
+talk. Every beat you cut becomes a question you must be ready to answer, so the two lists
+are the same list. Write the five hardest questions here, while you can still choose to
+move one of them into the speech instead. Rehearse them at Stage 7.
 
 **[GATE]** The user approves the skeleton before drafting.
 
@@ -265,6 +283,7 @@ Read these on demand, not upfront.
 | `references/deck.md` | Stage 6 |
 | `references/delivery.md` | Stage 7; nerves; Q&A; virtual delivery |
 | `references/teardowns.md` | Showing the user how a master solved the same problem — **structure only, never voice** |
+| `references/worked-example.md` | Seeing the whole workflow run once, or when a stage's output is unclear in the abstract |
 | `assets/speech-brief.md` | Stage 1 |
 | `assets/beat-sheet.md` | Stage 3 |
 | `assets/ppt-brief.md` | Stage 6 — the handoff artifact for whoever builds the deck |

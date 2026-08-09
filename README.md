@@ -64,7 +64,7 @@ supply those, and this skill is built to ask rather than fabricate. Where person
 is missing, it writes a labeled placeholder instead of a plausible lie. A speaker who
 discovers on stage that their own anecdote isn't true has been harmed, not helped.
 
-**Different occasions need different skeletons.** Ten archetypes, selected by what the
+**Different occasions need different skeletons.** Eleven archetypes, selected by what the
 audience actually has to *do* in the room. Using a TED shape for a board update is a common
 and expensive mistake.
 
@@ -87,14 +87,15 @@ speech-coach/
 ├── SKILL.md                      the workflow, gates, and quality bar
 ├── references/
 │   ├── principles.md             what the masters share — and where they disagree
-│   ├── archetypes.md             10 occasion-specific skeletons with beat sheets
+│   ├── archetypes.md             11 occasion-specific skeletons with beat sheets
 │   ├── material-mining.md        extracting the speaker's real material
 │   ├── voice.md                  making it sound like the speaker, not like a speech
 │   ├── language.md               writing for the ear: rhythm, diction, devices, ban list
 │   ├── openings-closings.md      7 openings and 6 closings that work, and what never does
 │   ├── deck.md                   slides, data, and the slide-brief spec
 │   ├── delivery.md               rehearsal, nerves, Q&A, virtual, recovery
-│   └── teardowns.md              5 canonical speeches, structurally dismantled
+│   ├── teardowns.md              5 canonical speeches, structurally dismantled
+│   └── worked-example.md         the whole workflow run once, end to end
 ├── assets/                       fill-in templates, including the slide brief
 └── scripts/
     └── speech_check.py           runtime, pacing, sentence length, cliché detection
@@ -147,7 +148,11 @@ power posing — the skill says so rather than repeating it.
       ordering, personal disclosure. The checker already handles CJK pacing and sentence
       segmentation.
 - [ ] More teardowns, drawn from outside the Anglo-American canon.
-- [ ] Worked end-to-end examples per archetype.
+- [ ] Worked examples for more archetypes. One exists (`worked-example.md`, a persuasive
+      internal proposal); ceremonial and crisis would be the most useful next.
+- [ ] Field testing. The components are verified and the worked example reproduces
+      exactly, but the workflow has not yet been run against a real speech under a real
+      deadline. That's the next thing that will teach us something.
 
 Issues and pull requests welcome.
 

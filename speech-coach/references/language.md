@@ -189,6 +189,45 @@ audience hadn't noticed, and now they're watching for it.
 
 ---
 
+## Writing to be interpreted
+
+If the talk goes through an interpreter, most decisions above change. Find out *which mode*
+before drafting a word — the two are not variations of each other.
+
+**Consecutive** (you speak, then the interpreter speaks): **halve the content.** This is
+arithmetic, not style. Eight minutes of stage time is four minutes of your words. Speakers
+who ignore this get cut off mid-argument, every time.
+
+**Simultaneous** (interpreter in a booth, real time): the clock holds, but the interpreter
+runs a few seconds behind you and is translating your *previous* sentence while you speak
+the next. Everything that depends on precise timing lands late or not at all.
+
+**Rules for both:**
+
+- **Complete, short units.** Interpreters work in chunks. A sentence that suspends its verb
+  or its point to the very end forces them to either wait or guess — and between languages
+  with different word order, guessing is where errors come from. Front-load subject and verb
+  even more aggressively than usual.
+- **No idioms, no puns, no wordplay, no sports metaphors.** "Hit it out of the park,"
+  "moving the goalposts," "the elephant in the room" — these either die or get rendered
+  literally, which is worse. Say the plain thing.
+- **Send the script or outline to the interpreter in advance.** The single highest-leverage
+  thing you can do, and it costs one email. Include a written list of every **number, name,
+  and technical term** — misheard numbers are the most common interpretation error by a wide
+  margin.
+- **Assume verbal humor dies.** Situational humor — something absurd that actually happened
+  — often survives, because the funny part is the event, not the phrasing.
+- **Pause at chunk boundaries, not mid-clause.** Your pause map is doing double duty now:
+  it's also the interpreter's working rhythm.
+- **Never speed up to make time.** You can accelerate; the interpreter cannot. Cut a beat
+  instead — which is why pre-marked `[CUT IF SHORT]` matters more here than anywhere.
+- **Simple devices survive; ornate ones don't.** Anaphora and the rule of three usually
+  carry across. Chiasmus, alliteration, and anything that depends on the sound of a
+  particular English word will not. Put your effort into structure and concreteness, which
+  translate perfectly.
+- **Look at the audience, not the interpreter.** The interpreter is a channel, not your
+  listener.
+
 ## Read-aloud checklist
 
 Standing, at volume, with a timer.

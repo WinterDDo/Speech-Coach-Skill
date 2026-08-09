@@ -83,6 +83,20 @@ PASSIVE_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Statistics spelled out as words. Speech scripts SHOULD spell numbers out, so a
+# digits-only detector silently reports zero on exactly the drafts written correctly.
+# Targets figures, not quantities: "thirty-one percent" counts, "two engineers" does not.
+NUM_WORD_RE = re.compile(
+    r"\b(?:"
+    r"(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)"
+    r"(?:[-\s](?:one|two|three|four|five|six|seven|eight|nine))?"
+    r"|(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|fifteen)"
+    r"\s+(?:percent|per\s?cent|thousand|million|billion|trillion)"
+    r"|hundreds|thousands|millions|billions"
+    r")\b",
+    re.IGNORECASE,
+)
+
 CJK_RE = re.compile(r"[一-鿿㐀-䶿぀-ヿ가-힯]")
 STAGE_DIR_RE = re.compile(r"\[([^\[\]]*)\]")
 HEADING_TIME_RE = re.compile(r"(\d+(?:\.\d+)?)\s*(?:min|minutes|mins|m)\b", re.IGNORECASE)
@@ -255,7 +269,9 @@ def analyze(raw, wpm, cpm, max_sentence, target_minutes):
             "over_by": round(d - target, 2) if target else None,
         })
 
-    numbers = re.findall(r"(?<![\w.])\d[\d,.]*\s*(?:%|percent|million|billion|k\b)?", clean)
+    digits = re.findall(r"(?<![\w.])\d[\d,.]*\s*(?:%|percent|million|billion|k\b)?", clean)
+    spelled = NUM_WORD_RE.findall(clean)
+    numbers = digits + spelled
     passive = [m.group(0) for m in PASSIVE_RE.finditer(clean)]
     wordy_hits = [(w, r, len(re.findall(r"\b" + re.escape(w) + r"\b", clean.lower())))
                   for w, r in WORDY.items()
@@ -291,6 +307,8 @@ def analyze(raw, wpm, cpm, max_sentence, target_minutes):
         "passive_count": len(passive),
         "passive_examples": passive[:8],
         "number_count": len(numbers),
+        "number_digits": len(digits),
+        "number_spelled": len(spelled),
         "stage_directions": len(directions),
         "max_sentence_threshold": max_sentence,
     }
@@ -423,7 +441,9 @@ def report(a, path):
         flags.append("High passive-voice rate — name the actor. Fatal in an apology")
 
     density = a["number_count"] / a["estimated_minutes"] if a["estimated_minutes"] else 0
-    p(f"  Numbers      : {a['number_count']} total, {round(density,1)}/min")
+    p(f"  Numbers      : {a['number_count']} total "
+      f"({a['number_digits']} as digits, {a['number_spelled']} spelled out), "
+      f"{round(density,1)}/min")
     if density > 6:
         flags.append(f"Number density {round(density,1)}/min — the ear stops processing "
                      "after three in a row. Round, compare, or move to a slide")
