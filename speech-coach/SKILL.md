@@ -1,6 +1,7 @@
 ---
 name: speech-coach
 description: "Turn a rough idea into a finished piece of public speaking: a structured framework, a script written for the ear, and a slide-by-slide brief that hands straight to a deck-building skill. Use this skill whenever the user needs to prepare anything that will be SPOKEN to an audience — a speech, talk, keynote, presentation, pitch, conference talk, all-hands or town-hall remarks, investor pitch, product launch, sales narrative, board or exec update, teaching session, panel appearance, toast, wedding speech, eulogy, award acceptance, or commencement address. Trigger even when the user only says things like 'I have to present next week', 'I need to say a few words', 'help me with my slides', 'write my talk', 'how should I open this', or 'make this sound less boring'. Also use it to diagnose, restructure, or tighten a draft speech or the narrative of an existing deck."
+license: MIT. Complete terms in LICENSE.txt
 ---
 
 # Speech Coach

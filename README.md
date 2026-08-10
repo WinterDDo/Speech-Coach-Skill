@@ -158,5 +158,17 @@ Issues and pull requests welcome.
 
 ## License
 
-Not yet chosen — see the note in the repository discussion. Until one is added, default
-copyright applies.
+[MIT](LICENSE) — the most widely used open source license, and the one most people already
+recognize.
+
+In plain terms: **anyone may use, modify, and redistribute this, including commercially,
+without asking.** The one condition is that the copyright notice travels with it.
+
+Choosing a permissive license does not give up copyright. The work remains the author's;
+the license is a standing grant of permission, and the author is free to release it under
+other terms as well.
+
+A note for anyone reusing the prose: this repository is mostly written methodology rather
+than code, and MIT is drafted for software. It is applied here to the whole repository for
+simplicity, which is common practice for documentation-heavy projects. Attribution is
+required either way.
