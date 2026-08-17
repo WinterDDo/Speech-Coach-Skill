@@ -2,10 +2,13 @@
 
 # Speech Coach
 
-**Work out what you're actually saying — before you make the slides.**
+### The step before the slides.
 
-A Claude Agent Skill. Tell it what talk you have to give. It interviews you, then builds
-a structure, a script written to be spoken aloud, and a slide brief you hand to any deck tool.
+**Every deck tool makes your presentation look good. None of them can tell you what to say.**
+
+A Claude Agent Skill that builds the storyline first. Tell it what you have to present —
+it interviews you, then produces a structure, a script written to be spoken aloud, and a
+slide brief you hand to any deck tool. Works for talks with no slides at all, too.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Claude Agent Skill](https://img.shields.io/badge/Claude-Agent%20Skill-D97757.svg)](https://code.claude.com/docs)
@@ -76,6 +79,32 @@ material, beat sheet, full script, checker output, slide brief, rehearsal plan.
 
 ---
 
+## Where it fits
+
+There are dozens of skills and tools that turn a prompt into a polished deck, and they work.
+**Making slides look good is solved.**
+
+But nobody sat through a bad presentation and thought *the typography let this down.* They
+thought: **I don't know what this person wanted from me.** That failure happens one step
+earlier — before a single slide exists — and no amount of deck generation reaches back to
+fix it. Every slide tool inherits a storyline it did not write and cannot check.
+
+That missing step is this.
+
+```mermaid
+flowchart LR
+    A["a rough idea<br/><i>“I present to the board Thursday”</i>"] --> B
+    B["<b>speech-coach</b><br/>———————<br/>throughline · your material<br/>beats · script · rehearsal<br/><br/><i>what you are saying</i>"]
+    B --> C["<b>slide brief</b><br/>———————<br/>per page: the one<br/>point it must land"]
+    C --> D["<b>pptx · ppt-master</b><br/><b>a designer · you</b><br/>———————<br/><i>how it looks</i>"]
+    style B fill:#D97757,stroke:#8a4433,color:#fff
+    style C fill:#f5e6df,stroke:#D97757,color:#000
+```
+
+**Use it with whatever you already use to make slides.** Different halves of the same problem.
+
+---
+
 ## Install
 
 ```bash
@@ -97,26 +126,6 @@ you're facing:
 Board updates, keynotes, conference talks, investor pitches, product launches, all-hands,
 town halls, sales narratives, training, panels, toasts, wedding speeches, eulogies, award
 acceptances — and *"help me with my slides."*
-
----
-
-## Where it fits
-
-Slide generators are solved and plentiful. But nobody sat through a bad presentation and
-thought *the typography let this down.* They thought: **I don't know what this person
-wanted from me.** That happens before any slide exists.
-
-```mermaid
-flowchart LR
-    A["a rough idea<br/><i>“I present to the board Thursday”</i>"] --> B
-    B["<b>speech-coach</b><br/>———————<br/>throughline · your material<br/>beats · script · rehearsal<br/><br/><i>what you are saying</i>"]
-    B --> C["<b>slide brief</b><br/>———————<br/>per page: the one<br/>point it must land"]
-    C --> D["<b>pptx · ppt-master</b><br/><b>a designer · you</b><br/>———————<br/><i>how it looks</i>"]
-    style B fill:#D97757,stroke:#8a4433,color:#fff
-    style C fill:#f5e6df,stroke:#D97757,color:#000
-```
-
-**Use it with whatever you already use to make slides.** Different halves of the same problem.
 
 ---
 
@@ -189,6 +198,17 @@ posing — this says so rather than repeating it.
 ---
 
 ## Questions
+
+**Does it actually make the PowerPoint file?**
+No — and that's deliberate. It produces the brief that says what each page must land, then
+hands it to a tool that builds decks well (`pptx`, `ppt-master`, a designer). Welding
+narrative to file production makes both harder to revise, and you'd be locked to one
+renderer.
+
+**What if my talk has no slides?**
+Then it's still the right tool, and it may tell you that you don't need slides at all — a
+legitimate output. Eulogies, toasts, apologies, all-hands and Q&A are all covered, and none
+of them want a deck.
 
 **Does it just write the speech for me?**
 No. It interviews you, then writes. That's slower than a one-shot generator and it's the

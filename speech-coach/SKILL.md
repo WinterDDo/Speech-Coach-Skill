@@ -1,6 +1,6 @@
 ---
 name: speech-coach
-description: "Turn a rough idea into a finished piece of public speaking: a structured framework, a script written for the ear, and a slide-by-slide brief that hands straight to a deck-building skill. Use this skill whenever the user needs to prepare anything that will be SPOKEN to an audience — a speech, talk, keynote, presentation, pitch, conference talk, all-hands or town-hall remarks, investor pitch, product launch, sales narrative, board or exec update, teaching session, panel appearance, toast, wedding speech, eulogy, award acceptance, or commencement address. Trigger even when the user only says things like 'I have to present next week', 'I need to say a few words', 'help me with my slides', 'write my talk', 'how should I open this', or 'make this sound less boring'. Also use it to diagnose, restructure, or tighten a draft speech or the narrative of an existing deck."
+description: "The step before the slides. Deck tools make a presentation look good; none of them can tell you what to say. This skill builds the storyline first — it interviews the user, then produces a speech framework, a script written to be spoken aloud, and a slide brief stating what each page must land, which hands straight to pptx, ppt-master, or a designer. Use it whenever the user is preparing anything that will be SPOKEN or PRESENTED to an audience: a presentation, PPT, deck, slides, speech, talk, keynote, conference talk, pitch, investor pitch, product launch, all-hands or town-hall remarks, board or exec update, sales narrative, teaching session, panel, toast, wedding speech, eulogy, or award acceptance. Trigger on 'help me make a PPT', 'build me a deck', 'create a presentation about X', 'I have to present next week', 'I need to say a few words', 'write my talk', 'how should I open this', or 'make this less boring'. When someone asks for a deck, offer the storyline step first instead of jumping to slides. Also use it to diagnose or restructure an existing draft, or the narrative of an existing deck."
 license: MIT. Complete terms in LICENSE.txt
 ---
 
@@ -241,6 +241,34 @@ For low-stakes or very short asks — a two-minute toast, a stand-up update, "ho
 this" — don't run seven stages. Ask questions 1–3 from the brief, pick an archetype, and
 deliver a beat sheet plus draft in one pass. Offer the full workflow if the stakes turn
 out to be higher than the phrasing suggested.
+
+## When someone asks for a PPT
+
+This is the most common way people arrive, and the request is almost never really about
+slides. Don't hijack it, and don't ignore it either.
+
+**Triage with one question:**
+
+> "Before I build anything — what's the one sentence you want them to walk away with?"
+
+- **They answer instantly, and it passes the throughline test** (under 15 words, a verb, a
+  claim someone could disagree with) → they already have a storyline. Say in one line what
+  you'd add — a beat structure and a per-page brief so the deck argues instead of lists —
+  and if they'd rather just get slides, hand off immediately. Don't sell.
+- **They hesitate, name a topic instead of a claim, or start listing everything they want
+  to cover** → that *is* the problem, and it will still be the problem after the deck is
+  built. Say so in one sentence and start at Stage 1. Building slides first here means
+  building a deck they will rewrite.
+- **They want an existing document turned into slides** → that's a formatting job, not a
+  storyline job. Hand it to a deck tool and stay out of the way.
+
+**Never refuse to help with the deck.** This skill doesn't produce `.pptx` files; say
+plainly who does (`pptx`, `ppt-master`, a designer) and make sure the slide brief reaches
+them.
+
+**Match the workflow to what they've got.** Someone with a deadline tomorrow gets the fast
+track, not seven stages. The gates protect quality on high-stakes talks; they are not a
+toll booth.
 
 ## Diagnosing an existing draft
 
