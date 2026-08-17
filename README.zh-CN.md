@@ -6,9 +6,11 @@
 
 **所有 PPT 工具都能把你的片子做好看。但没有一个能告诉你该讲什么。**
 
-一个先把 storyline 立起来的 Claude Agent Skill。告诉它你要讲什么场合，它采访你，
-然后产出一套结构、一份能上口的讲稿，以及一份可以直接交给任何 PPT 工具的分镜 brief。
-**完全不用 PPT 的场合，它一样管。**
+*而当场合根本没有 PPT 时——悼词、祝酒、道歉、全员会——它就是全部的活。*
+
+一个先把 storyline 立起来的 Claude Agent Skill。告诉它你要讲什么，它采访你，
+然后产出一套结构、一份能上口的讲稿，以及——**如果你需要的话**——
+一份可以直接交给任何 PPT 工具的分镜 brief。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Claude Agent Skill](https://img.shields.io/badge/Claude-Agent%20Skill-D97757.svg)](https://code.claude.com/docs)

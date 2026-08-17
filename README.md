@@ -6,9 +6,11 @@
 
 **Every deck tool makes your presentation look good. None of them can tell you what to say.**
 
-A Claude Agent Skill that builds the storyline first. Tell it what you have to present —
-it interviews you, then produces a structure, a script written to be spoken aloud, and a
-slide brief you hand to any deck tool. Works for talks with no slides at all, too.
+*And when there are no slides — a eulogy, a toast, an apology, an all-hands — it's the whole job.*
+
+A Claude Agent Skill that builds the storyline first. Tell it what you have to say; it
+interviews you, then produces a structure, a script written to be spoken aloud, and — if you
+need one — a slide brief you hand to any deck tool.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Claude Agent Skill](https://img.shields.io/badge/Claude-Agent%20Skill-D97757.svg)](https://code.claude.com/docs)
